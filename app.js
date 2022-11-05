@@ -9,5 +9,11 @@ let qun=$('#qun').val();
 if(price!="" && qun !="" && conceptName !="" ){
     $('#tb-item').append('<tr > <td>'+conceptName+'</td><td>'+price+'</td><td>'+qun+'</td></tr>');
     }
+   
+    $('#name-sel').find(":selected").text("")
+    $('#price').val=" "
+    $('#qun').text("")
+    $('#myform')[0].reset()
+ 
 });
 
