@@ -1,7 +1,8 @@
 // let price=document.getElementById("price");
 // console.log(price)
 
-$('#btn-add').click(()=>{
+$('#btn-add').click((e)=>{
+    e.preventDefault();
 let conceptName = $('#name-sel').find(":selected").val();
 let price =$('#price').val();
 let qun=$('#qun').val();
